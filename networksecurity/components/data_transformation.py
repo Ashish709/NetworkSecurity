@@ -14,9 +14,9 @@ from networksecurity.entity.artifact_entity import (
 )
 
 from networksecurity.entity.config_entity import DataTransformationConfig
-from networksecurity.excpetion.exception import NetworkSecurityException 
+from networksecurity.exception.exception import NetworkSecurityException 
 from networksecurity.logging.logger import logging
-from networksecurity.utils.main_utils.utils import save_numpy_array_data,save_object,read_data
+from networksecurity.utils.main_utils.utils import save_numpy_array_data,save_object #,read_data
 
 class DataTransformation:
     def __init__(self, data_validation_artifact:DataValidationArtifact,
@@ -27,6 +27,13 @@ class DataTransformation:
         except Exception as e:
             raise NetworkSecurityException(e,sys)
         
+    @staticmethod    
+    def read_data(file_path) -> pd.DataFrame:
+        try:
+            return pd.read_csv(file_path)
+        except Exception as e:
+            raise NetworkSecurityException(e, sys)
+                
 
 
         
@@ -61,8 +68,8 @@ class DataTransformation:
             logging.info("Starting data transformation")
             print("valid_train_file_path",self.data_validation_artifact.valid_train_file_path)
             print("valid_train_file_path",self.data_validation_artifact.valid_test_file_path)
-            train_df=read_data(self.data_validation_artifact.valid_train_file_path)
-            test_df=read_data(self.data_validation_artifact.valid_test_file_path)
+            train_df=DataTransformation.read_data(self.data_validation_artifact.valid_train_file_path)
+            test_df=DataTransformation.read_data(self.data_validation_artifact.valid_test_file_path)
 
             ## training dataframe
             input_feature_train_df=train_df.drop(columns=[TARGET_COLUMN,'_id'],axis=1)

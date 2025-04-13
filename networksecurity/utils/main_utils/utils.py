@@ -1,17 +1,14 @@
 from networksecurity.logging.logger import logging
-from networksecurity.excpetion.exception import NetworkSecurityException
+from networksecurity.exception.exception import NetworkSecurityException
 
 import os, sys, yaml, dill, pickle
 
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import GridSearchCV 
+from sklearn.metrics import r2_score 
 
-def read_data(file_path) -> pd.DataFrame:
-    try:
-        return pd.read_csv(file_path)
-    except Exception as e:
-        raise NetworkSecurityException(e, sys)
+
 
 def read_yaml_file(file_path: str) -> dict:
     try:
@@ -93,7 +90,7 @@ def load_numpy_array_data(file_path: str) -> np.array:
     
 
 
-def evaluate_models(X_train, y_train,X_test,y_test,models,param):
+def evaluate_models(x_train, y_train,X_test,y_test,models,param):
     try:
         report = {}
 
@@ -102,14 +99,14 @@ def evaluate_models(X_train, y_train,X_test,y_test,models,param):
             para=param[list(models.keys())[i]]
 
             gs = GridSearchCV(model,para,cv=3)
-            gs.fit(X_train,y_train)
+            gs.fit(x_train,y_train)
 
             model.set_params(**gs.best_params_)
-            model.fit(X_train,y_train)
+            model.fit(x_train,y_train)
 
             #model.fit(X_train, y_train)  # Train model
 
-            y_train_pred = model.predict(X_train)
+            y_train_pred = model.predict(x_train)
 
             y_test_pred = model.predict(X_test)
 

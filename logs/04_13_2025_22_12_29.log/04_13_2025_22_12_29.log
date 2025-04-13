@@ -1,0 +1,24 @@
+[ 2025-04-13 22:12:29,290 ] 148 numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2025-04-13 22:12:29,290 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2025-04-13 22:12:30,750 ] 62 root - INFO - Initiate the Data Ingestion
+[ 2025-04-13 22:12:47,573 ] 80 root - INFO - Performed Train Test Split on the DataFrame
+[ 2025-04-13 22:12:47,575 ] 82 root - INFO - Exited split_data_as_train_test method from Data_Ingestion Class
+[ 2025-04-13 22:12:47,575 ] 87 root - INFO - Exporting Train & Test file Path.
+[ 2025-04-13 22:12:47,663 ] 97 root - INFO - Exported train and test file path.
+[ 2025-04-13 22:12:47,667 ] 65 root - INFO - Data Ingestion Completed
+[ 2025-04-13 22:12:47,671 ] 71 root - INFO - Initiate the Data Validation
+[ 2025-04-13 22:12:47,735 ] 35 root - INFO - Required Number of Columns 2
+[ 2025-04-13 22:12:47,735 ] 36 root - INFO - Data Frame has colums: 32
+[ 2025-04-13 22:12:47,735 ] 35 root - INFO - Required Number of Columns 2
+[ 2025-04-13 22:12:47,735 ] 36 root - INFO - Data Frame has colums: 32
+[ 2025-04-13 22:12:47,972 ] 73 root - INFO - Data Validation Completed
+[ 2025-04-13 22:12:47,972 ] 78 root - INFO - Initiate the Data Transformation
+[ 2025-04-13 22:12:47,972 ] 66 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-04-13 22:12:47,972 ] 68 root - INFO - Starting data transformation
+[ 2025-04-13 22:12:48,046 ] 51 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-04-13 22:12:48,046 ] 56 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-04-13 22:12:48,052 ] 64 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-04-13 22:12:48,063 ] 68 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-04-13 22:12:48,063 ] 64 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-04-13 22:12:48,065 ] 68 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-04-13 22:12:48,069 ] 81 root - INFO - Data Transformation Completed
