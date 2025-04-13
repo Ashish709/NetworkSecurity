@@ -12,5 +12,7 @@ fastapi
 uvicorn
 python-multipart
 setuptools
+dill
+
 
 ##-e .

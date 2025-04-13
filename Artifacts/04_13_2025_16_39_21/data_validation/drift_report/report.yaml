@@ -1,0 +1,96 @@
+Abnormal_URL:
+  drift_status: false
+  p_value: 0.9999939100687764
+DNSRecord:
+  drift_status: false
+  p_value: 1.0
+Domain_registeration_length:
+  drift_status: false
+  p_value: 0.30206639201809926
+Favicon:
+  drift_status: false
+  p_value: 0.3514731304497657
+Google_Index:
+  drift_status: false
+  p_value: 0.9985585060006266
+HTTPS_token:
+  drift_status: false
+  p_value: 1.0
+Iframe:
+  drift_status: false
+  p_value: 0.9999578103694244
+Links_in_tags:
+  drift_status: false
+  p_value: 1.0
+Links_pointing_to_page:
+  drift_status: false
+  p_value: 0.9999999999999148
+Page_Rank:
+  drift_status: false
+  p_value: 0.9951111803133283
+Prefix_Suffix:
+  drift_status: false
+  p_value: 1.0
+Redirect:
+  drift_status: false
+  p_value: 1.0
+Request_URL:
+  drift_status: false
+  p_value: 0.72425954076736
+Result:
+  drift_status: false
+  p_value: 1.0
+RightClick:
+  drift_status: false
+  p_value: 1.0
+SFH:
+  drift_status: false
+  p_value: 0.6509863853107243
+SSLfinal_State:
+  drift_status: false
+  p_value: 0.9874069762258927
+Shortining_Service:
+  drift_status: false
+  p_value: 1.0
+Statistical_report:
+  drift_status: false
+  p_value: 1.0
+Submitting_to_email:
+  drift_status: false
+  p_value: 0.7892281718832967
+URL_Length:
+  drift_status: true
+  p_value: 0.0201594677901374
+URL_of_Anchor:
+  drift_status: false
+  p_value: 0.7298107405879364
+_id:
+  drift_status: false
+  p_value: 0.2867273548496656
+age_of_domain:
+  drift_status: false
+  p_value: 0.9751784512217775
+double_slash_redirecting:
+  drift_status: false
+  p_value: 1.0
+having_At_Symbol:
+  drift_status: false
+  p_value: 0.9999999962612656
+having_IP_Address:
+  drift_status: false
+  p_value: 1.0
+having_Sub_Domain:
+  drift_status: false
+  p_value: 0.6679997959943369
+on_mouseover:
+  drift_status: false
+  p_value: 0.9998388206083407
+popUpWidnow:
+  drift_status: false
+  p_value: 0.53361638858555
+port:
+  drift_status: false
+  p_value: 0.9614483549114261
+web_traffic:
+  drift_status: false
+  p_value: 0.9999994872658009

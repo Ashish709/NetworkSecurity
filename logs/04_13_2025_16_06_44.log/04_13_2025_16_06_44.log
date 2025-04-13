@@ -1,0 +1,17 @@
+[ 2025-04-13 16:06:44,722 ] 148 numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2025-04-13 16:06:44,722 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2025-04-13 16:06:46,941 ] 62 root - INFO - Initiate the Data Ingestion
+[ 2025-04-13 16:07:01,742 ] 80 root - INFO - Performed Train Test Split on the DataFrame
+[ 2025-04-13 16:07:01,742 ] 82 root - INFO - Exited split_data_as_train_test method from Data_Ingestion Class
+[ 2025-04-13 16:07:01,742 ] 87 root - INFO - Exporting Train & Test file Path.
+[ 2025-04-13 16:07:01,896 ] 97 root - INFO - Exported train and test file path.
+[ 2025-04-13 16:07:01,904 ] 65 root - INFO - Data Ingestion Completed
+[ 2025-04-13 16:07:01,912 ] 71 root - INFO - Initiate the Data Validation
+[ 2025-04-13 16:07:02,016 ] 35 root - INFO - Required Number of Columns 2
+[ 2025-04-13 16:07:02,017 ] 36 root - INFO - Data Frame has colums: 32
+[ 2025-04-13 16:07:02,017 ] 35 root - INFO - Required Number of Columns 2
+[ 2025-04-13 16:07:02,017 ] 36 root - INFO - Data Frame has colums: 32
+[ 2025-04-13 16:07:02,413 ] 73 root - INFO - Data Validation Completed
+[ 2025-04-13 16:07:02,413 ] 78 root - INFO - Initiate the Data Transformation
+[ 2025-04-13 16:07:02,414 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-04-13 16:07:02,414 ] 65 root - INFO - Starting data transformation
