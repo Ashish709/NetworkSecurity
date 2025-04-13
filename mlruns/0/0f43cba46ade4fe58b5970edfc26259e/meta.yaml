@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Python/NetworkSecurity/mlruns/0/0f43cba46ade4fe58b5970edfc26259e/artifacts
+end_time: 1744569541817
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0f43cba46ade4fe58b5970edfc26259e
+run_name: clumsy-stag-185
+run_uuid: 0f43cba46ade4fe58b5970edfc26259e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744569536933
+status: 3
+tags: []
+user_id: ashis
